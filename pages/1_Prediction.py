@@ -234,11 +234,9 @@ for section_name, features in sections:
                         if current not in [-1, 0, 1]:
                             current = 0
                         value = st.selectbox(
-                            feature,
-                            options=[-1, 0, 1],
-                            index=[-1, 0, 1].index(current),
-                            help=feature_help.get(feature, "Select -1, 0, or 1"),
-                            key=feature
+                        feature,
+                        options=[-1, 0, 1],
+                        key=feature
                         )
                         input_data[feature] = value
 
